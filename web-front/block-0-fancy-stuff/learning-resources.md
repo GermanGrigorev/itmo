@@ -14,3 +14,14 @@
 
 опрос веб-разработчиков о технологиях
 <https://2023.stateofjs.com/en-US/>
+
+## junior roadmap
+
+У вас должен быть пет проект:
+lang - Typescript
+css - Tailwind
+codestyle - Airbnb
+framework - React
+state-management - Tanstack Query
+forms - React hook forms
+tests - jest, react-testing-library

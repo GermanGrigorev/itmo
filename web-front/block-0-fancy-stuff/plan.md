@@ -6,10 +6,13 @@ most commonly used language
 most used language
 <https://www.statista.com/statistics/793628/worldwide-developer-survey-most-used-languages/>
 
+_Много информации_
+_Повторять несколь раз за курс, но не зарываться вглубь_
+_Вместо презентаций демонстрировать источники_
+_конспекты не нужны_
+
 Требования в вакансиях
 База / современность
-Не надо конспектов
-_Вместо презентаций демонстрировать источники_
 
 [learning-resources](learning-resources.md)
 

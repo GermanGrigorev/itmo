@@ -7,3 +7,5 @@
 
 google doc
 https://docs.google.com/document/d/14txuOSI_KKtWVFXsgsPRi1N4Fl2qhh-jio16kJkhg-Y/edit#heading=h.g3tkj3plen6t
+
+мой проект для Ильи - бот, админка, деплоймент
