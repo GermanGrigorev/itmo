@@ -1,11 +1,11 @@
-most commonly used language
-https://survey.stackoverflow.co/2023/#technology-most-popular-technologies
-
-most used language
-https://www.statista.com/statistics/793628/worldwide-developer-survey-most-used-languages/
+JS DOS
+https://github.com/caiiiycuk/js-dos/tree/8.xx?tab=readme-ov-file
 
 WASM Диабло:
 https://d07riv.github.io/diabloweb/
+
+wasm doom3
+https://www.continuation-labs.com/projects/d3wasm/
 
 Дефрагментация диска:
 https://defrag98.com/
