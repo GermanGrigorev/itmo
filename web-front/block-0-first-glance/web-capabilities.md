@@ -1,5 +1,7 @@
 # Веб Next
 
+https://2023.stateofjs.com/en-US/features/#browser_api_features
+
 JS DOS
 https://github.com/caiiiycuk/js-dos/tree/8.xx?tab=readme-ov-file
 
@@ -11,7 +13,7 @@ https://www.continuation-labs.com/projects/d3wasm/
 
 Вернуться к стейт оф джс
 
-WEB GL https://webglfundamentals.org/
+WEB GL https://webglfundamentals.org/ -- можно в проект вставить
 
 Web assembly https://webassembly.org/getting-started/developers-guide/
 
