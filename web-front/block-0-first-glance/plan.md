@@ -2,24 +2,20 @@
 
 ## Знакомство, организация
 
-## Для весу или мотивация учить
+## Мотивация учить
 
 most commonly used language
 <https://survey.stackoverflow.co/2023/#technology-most-popular-technologies>
 
-Повторять несколько раз за курс, но не зарываться вглубь, бросать, если заплутал
+Повторять несколько раз за курс, но не зарываться вглубь, бросать, если увяз
 
 Не перечислять предметы, лучше один, но с разных сторон
 
 Вместо презентаций демонстрировать источники, конспекты не нужны
 
-## Вакансии
+## Вакансии и roadmap
 
 База / современность
-
-## Источники знаний
-
-[learning-resources](learning-resources.md)
 
 ## В целом о вебе
 
@@ -30,3 +26,7 @@ most commonly used language
 [возможности](web-capabilities.md)
 
 notion на svelte
+
+## Источники знаний
+
+[learning-resources](learning-resources.md)
