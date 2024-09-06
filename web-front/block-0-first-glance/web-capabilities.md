@@ -1,3 +1,5 @@
+# Веб Next
+
 JS DOS
 https://github.com/caiiiycuk/js-dos/tree/8.xx?tab=readme-ov-file
 
@@ -7,6 +9,12 @@ https://d07riv.github.io/diabloweb/
 wasm doom3
 https://www.continuation-labs.com/projects/d3wasm/
 
+Вернуться к стейт оф джс
+
+WEB GL https://webglfundamentals.org/
+
+Web assembly https://webassembly.org/getting-started/developers-guide/
+
 Дефрагментация диска:
 https://defrag98.com/
 
@@ -15,3 +23,5 @@ https://onemillioncheckboxes.com/
 
 Моя читалка
 https://bilingual.space/
+
+Проблема:

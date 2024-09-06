@@ -1,6 +1,6 @@
 # Учебники
 
-удобный поверхностный учебник
+удобный поверхностный учебник, все по нему учатся, но иногда там врут, избегая философии
 <https://learn.javascript.ru/>
 
 правдивый и сложный учебник
@@ -15,9 +15,12 @@
 опрос веб-разработчиков о технологиях
 <https://2023.stateofjs.com/en-US/>
 
+мурыч и кир
+https://www.youtube.com/watch?v=7je1ygc9Gew&t=5701s&ab_channel=kirjs
+
 ## junior roadmap
 
-У вас должен быть пет проект:
+У вас должен быть визитный проект:
 lang - Typescript
 css - Tailwind
 codestyle - Airbnb
