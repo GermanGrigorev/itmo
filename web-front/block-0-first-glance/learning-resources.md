@@ -21,10 +21,17 @@ https://www.youtube.com/watch?v=7je1ygc9Gew&t=5701s&ab_channel=kirjs
 ## junior roadmap
 
 У вас должен быть визитный проект:
+
 lang - Typescript
+
 css - Tailwind
+
 codestyle - Airbnb
+
 framework - React
+
 state-management - Tanstack Query
+
 forms - React hook forms
+
 tests - jest, react-testing-library
