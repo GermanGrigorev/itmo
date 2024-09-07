@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <style>
+      h1 {
+        color: red;
+      }
+    </style>
+    <script>
+      window.addEventListener("load", () => {
+        const h1 = document.getElementById("wiki");
+        h1.addEventListener("click", () => alert("clicked"));
+      });
+    </script>
+  </head>
+  <body>
+    <div>Hello world</div>
+    <h1 id="wiki">Wikipedia</h1>
+  </body>
+</html>
