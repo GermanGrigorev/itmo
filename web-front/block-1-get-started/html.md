@@ -1,4 +1,11 @@
-HTML спецификация
+# HTML
+
+css2 ru спецификация
+https://www.w3.org/Style/css2-updates/russian/intro.html
+
+HTML4 спецификация 1999 год - добавили js и css 
+
+HTML5 спецификация
 https://html.spec.whatwg.org/
 
 Мурыч о html:
