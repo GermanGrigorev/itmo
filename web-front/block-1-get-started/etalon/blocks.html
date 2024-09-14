@@ -2,18 +2,26 @@
 <html>
   <head>
     <title>itmo web</title>
+    <script>
+      window.addEventListener("load", () => {
+        const form = document.getElementById("form");
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const form = new FormData(event.target);
+          const todo = form.get("todo");
+          const container = document.getElementById("container");
+          const div = document.createElement("div");
+          div.innerText = todo;
+          container.appendChild(div);
+        });
+      });
+    </script>
   </head>
   <body>
-    <div>div span a button form input</div>
-    <div>
-      I'm a DIV
-      <div>I'm a nested DIV <span>I'm a nested SPAN</span></div>
-    </div>
-    <div>
-      <a href="index.html">Link to index</a>
-      <button onclick="alert('hello')">Say Hello</button>
-      <button onclick="window.location.replace('index.html')">Redirect</button>
-      <input placeholder="I'm input" />
-    </div>
+    <form id="form" method="post">
+      <input name="todo" type="text" placeholder="todo" />
+      <button type="submit">Add Todo</button>
+    </form>
+    <div id="container"></div>
   </body>
 </html>
