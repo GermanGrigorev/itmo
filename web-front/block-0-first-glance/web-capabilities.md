@@ -1,5 +1,10 @@
 # Веб Next
 
+https://www.tema.ru/rrr/tablichki/
+
+https://aquarium.ru/ru
+
+
 https://2023.stateofjs.com/en-US/features/#browser_api_features
 
 JS DOS
