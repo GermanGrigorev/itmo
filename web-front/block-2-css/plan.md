@@ -1,15 +1,15 @@
 # Plan
 
-CSS огромен, я долго думал, как о нем рассказать. Хочется всеми силами избежать перечисления одинаковой информации, не то все уснут.
+12 способов нарисовать домино
 
-Пример вопрос на интервью - как нарисовать "домино".
+селекторы / стили
 
-userAgent - термин из html спеки, агент пользователя, например браузер.
+нариовать кнопку
 
-px $ vw vh
+приложение / лэндинг
 
+px % vw vh em rem calc
 margin-padding
-selectors
 pseudo-classes
 pseudo-elements
 flex / grid
@@ -17,5 +17,9 @@ position z-index
 @media
 
 BEM
-
+scss
 Tailwind
+
+центрирование
+floating-ui
+use-gestures
