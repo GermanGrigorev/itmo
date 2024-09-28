@@ -9,11 +9,12 @@
 приложение / лэндинг
 
 px % vw vh em rem calc
+colors
 margin-padding
+display flex / grid
+position z-index
 pseudo-classes
 pseudo-elements
-flex / grid
-position z-index
 @media
 
 BEM
