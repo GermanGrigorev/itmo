@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>css</title>
+    <style>
+      button {
+      }
+
+      /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+    </style>
+    <style>
+  .landing__container {
+    background-color: wheat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header {
+    z-index: 100;
+    width: 100vw;
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+  }
+  .header__link {
+    text-transform: uppercase;
+  }
+  .header__link_red {
+    position: relative;
+    color: red;
+  }
+  .nav {
+    width: 50%;
+    /* position: relative; */
+  }
+  .question {
+    /* position: absolute; */
+    right: 20px;
+  }
+
+  .x2 {
+    background-color: aliceblue;
+  }
+
+  main {
+    position: relative;
+  }
+  section {
+    margin-top: 200px;
+  }
+  .feedback {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .feedback__cta {
+    border-radius: 100%;
+    border-color: red;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+</style>
+
+  </head>
+  <body>
+   
+
+
+<div class="landing__container">
+  <div>
+    <header class="header">
+      Gravity Team
+      <nav class="nav">
+        <a class="header__link" href="#footer">link to Footer</a>
+        <a class="header__link header__link_red" href="#footer">linkt to Footer
+          <span class="question">?</span>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section class="section">
+        <aside class='feedback'>
+          <button on:click={() => alert('Hi How can i help you?')} class="feedback__cta">
+            ?
+          </button>
+        </aside>
+      </section>
+      <div>
+        Картинки
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, vel dolores quos odio itaque asperiores fugit corporis debitis? Laboriosam blanditiis dolorem aliquam numquam libero in officiis autem, ex voluptatem similique.
+        Voluptatum vero dolor dicta minus amet odio tenetur quas consectetur illo iusto hic quod eligendi, placeat vitae commodi aliquid nulla omnis enim neque sunt tempore magnam? Numquam cum a deleniti.
+        Veritatis consectetur molestias consequatur cum laborum. Aliquam, illo. Odit possimus earum placeat officia tempore est ea modi iste minus laborum cumque nisi, quo, porro voluptatum nemo mollitia corrupti. Beatae, quae.
+        Natus id enim impedit distinctio, voluptate veniam consequuntur quibusdam ea delectus. At distinctio saepe voluptatibus sint nesciunt laudantium, repudiandae esse ad voluptate aspernatur qui excepturi fuga facilis accusamus dolore. Error!
+        Cum aspernatur facere nostrum quibusdam quia provident. Ut numquam laboriosam odio? Quasi mollitia, doloribus possimus voluptatem sint ex inventore nulla iusto qui at soluta porro aliquid numquam, neque, optio ea.
+        Sunt autem incidunt dolorum doloremque voluptatibus nihil est amet, sit, perferendis exercitationem totam nesciunt suscipit aut aliquid deleniti perspiciatis soluta quod consectetur assumenda accusantium neque error illum repudiandae nemo! Consequatur.
+        Deserunt soluta perspiciatis nesciunt officiis minus expedita architecto ab vel, ipsam doloribus harum quibusdam nobis itaque pariatur obcaecati molestiae excepturi voluptatem explicabo saepe! Culpa rem harum vero rerum cupiditate obcaecati!
+        Voluptatum repellendus sapiente atque odio tenetur fugiat quod, itaque placeat, quae mollitia maiores. Id harum quibusdam, voluptate fuga vitae optio, ex consequuntur alias necessitatibus ad molestias ullam, quod tempore cupiditate?
+        Eveniet, voluptatem. Laudantium minima placeat maxime perspiciatis aperiam adipisci consequuntur ex illo assumenda id optio aut, ipsum dolor! Eveniet nulla voluptates iste? Beatae officiis cum fugiat repellendus vitae ipsa hic.
+        A, dignissimos minima, eum alias temporibus perferendis aspernatur officia ut blanditiis nisi hic quae totam atque, obcaecati corporis nesciunt illo distinctio ducimus soluta maxime placeat? Dignissimos nihil reiciendis alias delectus!
+        Odit, voluptatem ea cumque libero iusto natus velit minima deleniti illum iste quaerat assumenda pariatur labore praesentium nemo eos quibusdam consequatur similique soluta corrupti est expedita consectetur numquam adipisci? Unde.
+        Eum omnis quam, ullam quasi, commodi quidem quo, sequi ex amet dicta explicabo dolor et nobis ipsam sit reprehenderit. Vero quidem atque, expedita pariatur nobis cumque vitae harum eius excepturi?
+        Illo minima maxime a voluptate animi et odio eos expedita quisquam, quae accusamus sunt numquam totam possimus neque necessitatibus vero alias eius. Assumenda, nihil temporibus? Rerum eaque ad nemo. Obcaecati.
+        Placeat ab nobis saepe. Voluptatibus doloribus maiores amet quibusdam nisi ipsa voluptatum deserunt veniam eius natus odit asperiores soluta debitis inventore, rem vel cum assumenda, beatae in ratione sed. Velit!
+        Dolorum minus cupiditate veniam fuga aperiam quis nam. Consequuntur, harum repellendus! Quaerat, neque eius aliquam quibusdam dicta optio suscipit nemo porro deserunt similique necessitatibus, quos assumenda commodi dolores, officiis est.
+        Et assumenda eius iusto numquam consectetur pariatur officia quo nulla ex! Facilis distinctio nemo esse reprehenderit et necessitatibus vero placeat beatae ab quia optio voluptatibus temporibus officia, modi suscipit est?
+        Amet fugit officiis minima molestias sit ut hic ducimus eligendi minus. Consequuntur, a repudiandae. Perspiciatis repudiandae eveniet dolores aliquid similique blanditiis officia, in ut? Quam qui aliquam velit at reiciendis.
+        Eum, non quia. Iusto nisi incidunt, deserunt accusamus ab esse odio totam libero minima temporibus debitis et quis fuga distinctio, porro quia, ducimus mollitia quaerat. Blanditiis nesciunt dolorem mollitia dolorum!
+        Dolore laboriosam aliquam pariatur officiis sunt accusantium quod repudiandae magnam ut deleniti ea alias iusto beatae itaque tempora doloremque odit natus eius nesciunt, atque qui libero neque nemo quis. Molestiae?
+        Asperiores id corrupti sit temporibus, eaque placeat saepe. Veniam ea provident alias molestias, nobis dignissimos numquam quod saepe ratione eos, eligendi sed aspernatur? Ad, quam ab. Deserunt, ullam voluptas? Iste.
+      </div>
+      <div></div>
+    </main>
+  </div>
+  <footer class="x2" id="footer">
+    Ссылки
+  </footer>
+</div>
+
+  </body>
+</html>
