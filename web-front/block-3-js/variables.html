@@ -146,36 +146,53 @@
   <script>
     const flag = true;
 
+    let letStr;
+
     if (flag) {
       let letStr = "a";
+
       var varStr = "a";
     } else {
       let letStr = "b";
+
       var varStr = "b";
     }
-    // console.log(varStr);
-    // console.log(letStr);
+    console.log(varStr);
+    console.log(letStr);
 
-    // flag = false;
+    flag = false;
 
-    // let str = "string";
-    // let number = 12;
-    // let bool = true;
-    // let obj = {};
-    // // let objConstructor = new Object();
-    // let arr = [];
-    // // let arrConstructor = new Array();
-    // let undef = undefined;
-    // let nul = null;
+    // string number bigInt bool null undefined Symbol
+    // object
 
-    // var undefined = 5;
-    // console.log(undefined);
+    let number = 12;
+    let str = "string";
+    let bool = true; // false
+    let undef = undefined;
+    let nul = null;
+    // let symb = Symbol();
+    const obj = { a: 5 };
+    let arr = [];
 
-    // typeof
+    const wP = "War & Peace text";
 
-    // let strFalse = "";
-    // let numberFalse = 0;
-    // let boolFalse = false;
-    // let objFalse = null;
+    function logStr(str) {
+      str = "ts";
+      console.log(str);
+    }
+    logStr(wP);
+    function sum(num) {
+      num = num + 5;
+      console.log("sum", num);
+    }
+
+    console.log("a", obj.a);
+
+    function addProperty(obj) {
+      obj.a = 5;
+      console.log("a", obj.a);
+    }
+
+    addProperty(obj);
   </script>
 </html>
