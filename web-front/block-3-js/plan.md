@@ -1,12 +1,13 @@
 # Variables
 
+
 var, let, const
 
 number boolean string null undefined symbol bigint
 
-object / array function
+object .. array function
 
-typeof
+typeof number boolean string undefined symbol bigint object function
 
 `+ - * / ** & | >> <<`
 

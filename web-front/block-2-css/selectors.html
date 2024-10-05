@@ -137,39 +137,47 @@
       }
     </style>
     <style>
-      button {
+      .buttonClass {
+        background-color: red;
       }
-      button {
+      #buttonId {
+        background-color: blue;
       }
       .buttonClass {
       }
-      #button {
+      #buttonId {
       }
-      button[name="button"] {
+      button[name="buttonName"] {
       }
 
-      .buttonClass:hover:active {
+      .buttonClass:hover {
+        background-color: yellow;
       }
       .buttonClass::before {
       }
       .buttonClass::first-letter {
+        color: white;
       }
       .buttonClass:only-child {
       }
-      main > .button {
+
+      main > .buttonClass {
       }
     </style>
   </head>
   <body>
-    <main>
-      <button id="button" class="buttonClass">Button</button>
+    <main style="display: flex; width: 100vw; justify-content: center">
+      <button name="buttonName" id="buttonId" class="buttonClass">
+        Button
+      </button>
     </main>
   </body>
   <script>
-    document.getElementById();
+    const button = document.getElementById("buttonId");
+    console.log(button);
     document.getElementsByClassName();
-    document.getElementsByName();
-    document.getElementsByTagName();
+    document.getElementsByName("buttonName");
+    document.getElementsByTagName("button");
     document.querySelector();
     document.querySelectorAll();
   </script>
