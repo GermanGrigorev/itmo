@@ -1,17 +1,17 @@
 # Functions
 
-callbacks
+this
 
-методы, this
+class, new
 
-scope
+callbacks - onLoad, onClick
 
-class
-
-new
+arrow functions
 
 сборщик мусора scopes
 
-event loop
+setInterval
 
-promise
+promise async await -> weather api
+
+event loop
