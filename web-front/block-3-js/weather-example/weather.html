@@ -2,10 +2,42 @@
 <html>
   <head>
     <title>Weather</title>
+    <style>
+      .weatherCard {
+        border: 1px solid green;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+    <script>
+      window.addEventListener("load", () => {
+        // код программы
+        const moscowCta = document.getElementById("moscowCta");
+        const template = document.getElementById("weatherTemplate");
+        moscowCta.addEventListener("click", async () => {
+          const data = await fetch(
+            "https://api.openweathermap.org/data/2.5/weather?q=Moscow&appid=71d31aa0fa80b76923fd889e32f0d07f&units=metric&lang=ru"
+          );
+          const json = await data.json();
+          const temp = json.main.temp;
+
+          const clone = template.content.cloneNode(true);
+          const tempField = clone.querySelector(".temp");
+          tempField.innerText = temp;
+          document.body.appendChild(clone);
+        });
+      });
+    </script>
   </head>
   <body>
     <main>
-      <button id="buttonId" class="button">I am button</button>
+      <button id="moscowCta" class="">Погода в Москве</button>
     </main>
+    <template id="weatherTemplate">
+      <div class="weatherCard">
+        <div>Город: Москва</div>
+        <div>Температура: <span class="temp"></span></div>
+      </div>
+    </template>
   </body>
 </html>
