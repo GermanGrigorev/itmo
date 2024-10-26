@@ -30,6 +30,7 @@
       window.addEventListener("load", () => {
         // код программы
         const moscowCta = document.getElementById("moscowCta");
+        const loader = document.getElementById("loader");
         // погода в москве
         moscowCta.addEventListener("click", async () => {
           const data = await fetch(
@@ -45,6 +46,7 @@
         // погода у нас
         currentLocCta.addEventListener("click", async () => {
           try {
+            loader.style.display = "block";
             const currentPos = await getCurrentPositionAsync();
 
             const coords = currentPos.coords;
@@ -61,6 +63,8 @@
             renderWeatherCard(name, temp);
           } catch (e) {
             console.log(e);
+          } finally {
+            loader.style.display = "none";
           }
         });
       });
@@ -71,6 +75,7 @@
       <button id="moscowCta" class="">Погода в Москве</button>
       <button id="currentLocCta" class="">Погода у нас</button>
     </main>
+    <div id="loader" style="display: none">Loading...</div>
     <template id="weatherTemplate">
       <div class="weatherCard">
         <div>Город: <span class="name"></span></div>
