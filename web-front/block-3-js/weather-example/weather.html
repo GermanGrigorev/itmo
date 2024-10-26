@@ -29,12 +29,24 @@
 
       window.addEventListener("load", () => {
         // код программы
-        const moscowCta = document.getElementById("moscowCta");
+        // const moscowCta = document.getElementById("moscowCta");
         const loader = document.getElementById("loader");
         // погода в москве
-        moscowCta.addEventListener("click", async () => {
+        // moscowCta.addEventListener("click", async () => {
+        //   const data = await fetch(
+        //     "https://api.openweathermap.org/data/2.5/weather?q=Moscow&appid=71d31aa0fa80b76923fd889e32f0d07f&units=metric&lang=ru"
+        //   );
+        //   const json = await data.json();
+        //   const temp = json.main.temp;
+        //   const name = json.name;
+        //   renderWeatherCard(name, temp);
+        // });
+        const form = document.getElementById("searchWeatherForm");
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const city = form.city.value;
           const data = await fetch(
-            "https://api.openweathermap.org/data/2.5/weather?q=Moscow&appid=71d31aa0fa80b76923fd889e32f0d07f&units=metric&lang=ru"
+            `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=71d31aa0fa80b76923fd889e32f0d07f&units=metric&lang=ru`
           );
           const json = await data.json();
           const temp = json.main.temp;
@@ -72,7 +84,10 @@
   </head>
   <body>
     <main>
-      <button id="moscowCta" class="">Погода в Москве</button>
+      <form id="searchWeatherForm">
+        <input name="city" type="text" placeholder="Введите город" />
+        <button type="submit" class="">Погода в этом городе</button>
+      </form>
       <button id="currentLocCta" class="">Погода у нас</button>
     </main>
     <div id="loader" style="display: none">Loading...</div>
