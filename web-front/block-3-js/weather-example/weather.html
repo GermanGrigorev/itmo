@@ -21,6 +21,15 @@
         document.body.appendChild(clone);
       }
 
+      async function getCurrentPositionAsync() {
+        return new Promise((resolve, reject) => {
+          navigator.geolocation.getCurrentPosition(
+            resolve,
+            reject
+          );
+        });
+      }
+
       window.addEventListener("load", () => {
         // код программы
         const moscowCta = document.getElementById("moscowCta");
@@ -34,26 +43,24 @@
           const name = json.name;
           renderWeatherCard(name, temp);
         });
+
         const currentLocCta = document.getElementById("currentLocCta");
         // погода у нас
         currentLocCta.addEventListener("click", async () => {
-          navigator.geolocation.getCurrentPosition(
-            async (currentPos) => {
-              const coords = currentPos.coords;
-              const lat = coords.latitude;
-              const lon = coords.longitude;
-              const data = await fetch(
-                `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=71d31aa0fa80b76923fd889e32f0d07f&units=metric&lang=ru`
-              );
-              const json = await data.json();
-              console.log("local weather", json);
-              const temp = json.main.temp;
-              const name = json.name;
+          const currentPos = await getCurrentPositionAsync();
 
-              renderWeatherCard(name, temp);
-            },
-            (error) => console.log(error)
+          const coords = currentPos.coords;
+          const lat = coords.latitude;
+          const lon = coords.longitude;
+          const data = await fetch(
+            `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=71d31aa0fa80b76923fd889e32f0d07f&units=metric&lang=ru`
           );
+          const json = await data.json();
+          console.log("local weather", json);
+          const temp = json.main.temp;
+          const name = json.name;
+
+          renderWeatherCard(name, temp);
         });
       });
     </script>
