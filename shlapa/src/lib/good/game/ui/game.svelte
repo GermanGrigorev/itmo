@@ -10,6 +10,6 @@
 	};
 </script>
 
-<Cta onclick={handleChange}>
-	<Signified text={current.text} />
+<Cta class="w-full" onclick={handleChange}>
+	<Signified isAlwaysVisible text={current?.text} />
 </Cta>

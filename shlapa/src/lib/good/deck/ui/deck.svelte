@@ -25,6 +25,7 @@
 				$deckStore = [...$deckStore, signified];
 			}
 		}
+		inputValue = '';
 	};
 </script>
 
