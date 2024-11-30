@@ -1,3 +1,7 @@
+# VK VIDEO PLAYLIST
+
+https://vkvideo.ru/playlist/102501392_50641170
+
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
