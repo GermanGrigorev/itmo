@@ -2,6 +2,7 @@
 	import { Cta } from '$lib/component/cta';
 	import { Signified, type ISignified } from '$lib/entity/signified';
 	import { deckStore } from '$lib/feature/store-deck';
+	import { GradientButton, Input, Label } from 'flowbite-svelte';
 	import { onMount } from 'svelte';
 
 	let inputValue = $state<string>('');
@@ -29,14 +30,16 @@
 </script>
 
 <div class="p-3">
+	<form class="mb-5 flex items-end gap-5" onsubmit={handleSubmit}>
+		<Label class=""
+			>Add word
+			<Input required bind:value={inputValue} class=" bg-slate-200" type="text" />
+		</Label>
+		<GradientButton color="pinkToOrange" type="submit">Add</GradientButton>
+	</form>
 	{#each arr as card}
 		<div class="mb-2">
 			<Signified text={card.text} />
 		</div>
 	{/each}
-
-	<form onsubmit={handleSubmit}>
-		<input bind:value={inputValue} class=" bg-slate-200" type="text" />
-		<Cta type="submit">Add</Cta>
-	</form>
 </div>

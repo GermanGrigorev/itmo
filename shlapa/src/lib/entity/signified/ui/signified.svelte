@@ -1,7 +1,9 @@
 <script lang="ts">
+	import { Card } from 'flowbite-svelte';
+
 	let { text } = $props();
 </script>
 
-<div class="border-2 border-dashed border-my-accent p-3">
+<Card>
 	{text}
-</div>
+</Card>
