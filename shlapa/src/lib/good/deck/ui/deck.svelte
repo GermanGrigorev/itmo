@@ -5,12 +5,11 @@
 	import { onMount } from 'svelte';
 
 	let inputValue = $state<string>('');
-	let arr = $state<ISignified[]>([]);
 
 	onMount(async () => {
 		const db = await import('$lib/shared/indexedDb');
 		const res = await db.dbActions.getAllSigns();
-		arr = res;
+		$deckStore = res;
 		console.log(res);
 	});
 
@@ -23,11 +22,9 @@
 				gameKey: game?.key
 			});
 			if (signified) {
-				arr.push(signified);
+				$deckStore = [...$deckStore, signified];
 			}
 		}
-
-		$deckStore = [...$deckStore, { text: inputValue }];
 	};
 </script>
 
@@ -39,7 +36,7 @@
 		</Label>
 		<GradientButton color="pinkToOrange" type="submit">Add</GradientButton>
 	</form>
-	{#each arr.toReversed() as card (card.key)}
+	{#each $deckStore.toReversed() as card (card.key)}
 		<div class="mb-2">
 			<Signified text={card.text} />
 		</div>
