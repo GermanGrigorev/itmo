@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { Cta } from '$lib/component/cta';
 	import { Signified, type ISignified } from '$lib/entity/signified';
 	import { deckStore } from '$lib/feature/store-deck';
 	import { GradientButton, Input, Label } from 'flowbite-svelte';
@@ -23,6 +22,9 @@
 				text: inputValue,
 				gameKey: game?.key
 			});
+			if (signified) {
+				arr.push(signified);
+			}
 		}
 
 		$deckStore = [...$deckStore, { text: inputValue }];
@@ -37,7 +39,7 @@
 		</Label>
 		<GradientButton color="pinkToOrange" type="submit">Add</GradientButton>
 	</form>
-	{#each arr as card}
+	{#each arr.toReversed() as card (card.key)}
 		<div class="mb-2">
 			<Signified text={card.text} />
 		</div>
