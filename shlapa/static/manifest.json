@@ -1,0 +1,18 @@
+{
+	"short_name": "Shlapa",
+	"name": "Shlapa",
+	"icons": [
+		{
+			"src": "/favicon.png",
+			"type": "image/png",
+			"sizes": "any"
+		}
+	],
+	"id": "/app",
+	"start_url": "/app",
+	"scope": "/app",
+	"background_color": "#F6E4BD",
+	"display": "standalone",
+	"theme_color": "#F6E4BD",
+	"description": "Shlapa"
+}
