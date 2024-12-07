@@ -3,9 +3,14 @@
 	"name": "Shlapa",
 	"icons": [
 		{
-			"src": "/favicon.png",
-			"type": "image/png",
+			"src": "/head.svg",
+			"type": "image/svg+xml",
 			"sizes": "any"
+		},
+		{
+			"src": "/head.svg",
+			"type": "image/svg+xml",
+			"sizes": "512x512"
 		}
 	],
 	"id": "/app",
